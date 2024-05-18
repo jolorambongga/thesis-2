@@ -54,10 +54,12 @@ display = utils.notebook_init()  # checks
 ```
 ###### Create Your Own `customData.yaml` File:
 > Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide`
+```bash
 > - drive
 >   - MyDrive
 >     - yolov5
 >       - data
+
 ```
 train: /content/drive/MyDrive/DATASET/motor_rider/images/
 val: /content/drive/MyDrive/DATASET/motor_rider/images/validate
@@ -71,27 +73,3 @@ names:
   3: without_helmet
   4: plate_num
 ```
-#!/bin/bash
-
-#File: tree-md
-
-tree=$(tree -tf --noreport -I '*~' --charset ascii $1 |
-       sed -e 's/| \+/  /g' -e 's/[|`]-\+/ */g' -e 's:\(* \)\(\(.*/\)\([^/]\+\)\):\1[\4](\2):g')
-
-printf "# Project tree\n\n${tree}"
-
-$ ./tree-md .
-# Project tree
-
-.
- * [tree-md](./tree-md)
- * [dir2](./dir2)
-   * [file21.ext](./dir2/file21.ext)
-   * [file22.ext](./dir2/file22.ext)
-   * [file23.ext](./dir2/file23.ext)
- * [dir1](./dir1)
-   * [file11.ext](./dir1/file11.ext)
-   * [file12.ext](./dir1/file12.ext)
- * [file_in_root.ext](./file_in_root.ext)
- * [README.md](./README.md)
- * [dir3](./dir3)
