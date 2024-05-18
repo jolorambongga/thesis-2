@@ -20,6 +20,7 @@
 <a href="#" targe="_blank">Link for the training model using Google Colab</a>
 <a name="" />
 
-## REQUIREMENTS FOR THIS TO WORK:
+## HOW TO SET-UP:
+### MUST HAVE THE FOLLOWING:
 - [x] Google Colab
 - [x] Google Drive `(for dataset)`
