@@ -52,8 +52,8 @@ import torch
 import utils
 display = utils.notebook_init()  # checks
 ```
-###### Create Your Own `Data.yaml` File:
-> Go to -> 
+###### Create Your Own `customData.yaml` File:
+> Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name)
 ```
 train: /content/drive/MyDrive/DATASET/motor_rider/images/
 val: /content/drive/MyDrive/DATASET/motor_rider/images/validate
