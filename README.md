@@ -23,10 +23,17 @@
 #### BEFORE SET-UP (PREPARE THE FOLLOWING):
 - [x] Your Custom Dataset `(Google Drive)`
 - [x] Google Colab
->## HOW TO SET-UP:
->>**Import Your Google Drive**
->>>Be sure that you are using the same Google Account on the Google Colab notebook and the Google Drive where you have your dataset
+## HOW TO SET-UP:
+**Import Your Google Drive**
+Be sure that you are using the same Google Account on the Google Colab notebook and the Google Drive where you have your dataset
 #### Code Sinppets:
+###### Import Google Drive:
 ```
 from google.colab import drive
-drive.mount('/content/drive')```
+drive.mount('/content/drive')
+```
+###### Check for current Directory:
+> Be sure that your current directory is inside your Google Drive; so that when you git clone the YOLOv5 repository, it will be saved inside your drive.
+```
+!pwd
+```
