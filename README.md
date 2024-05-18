@@ -68,9 +68,13 @@
 >>> - Validate - used to validate the trained model and to fine-tune it
 >>> - Test - used to test the accuracy of the model
 >>> **What is the best ratio for the images?**: *my prepare ratio for the train, test, and validate ratio is listed below*
+>>>   
 >>>   **Train** - `80% of the total images and labels`
+>>>   
 >>>   **Validate** - `10% of the total images and labels`
+>>>   
 >>>   **Train** - `10% of the total images and labels`
+>>>   
 >>>   Therefore, if you have `1,000 images and labels`; you would have `800 images and labels in train`, `100 images and labels in validate`, and `100 images and labels in test` folder.
 ***
 <a name="codeSnippets" />
