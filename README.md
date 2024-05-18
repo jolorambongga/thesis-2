@@ -2,7 +2,7 @@
 > Table of Contents:
 - [Train Model (For Rider)](#modelRider)
 - [Train Model (For Helmet](#modelHelmet)
-- Train Model (For Plate)](#modelPlate)
+- [Train Model (For Plate)](#modelPlate)
 <a name="modelRider"/>
 
 ## TRAIN THE MODEL FOR RIDER DETECTION
