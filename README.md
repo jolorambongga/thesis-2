@@ -76,7 +76,7 @@
 >>>   
 >>>   **Validate** - `10% of the total images and labels`
 >>>   
->>>   **Train** - `10% of the total images and labels`
+>>>   **Test** - `10% of the total images and labels`
 >>>   
 >>>   Therefore, if you have `1,000 images and labels`; you would have `800 images and labels in train`, `100 images and labels in validate`, and `100 images and labels in test` folder.
 ***
