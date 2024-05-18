@@ -39,6 +39,7 @@
   ├── test
 ```
 > **Note**: you may check the YOLOv5 documentary for training <a href="https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/">here</a>.
+
 > **Additional Note**: you may change the folder names for `train, validate, and test` however, do not **"images"** and **"labels"** should remain the same. This is how yolov5 locates your iamges and labels therefore, you **SHOULD NOT** change it!
 #### Code Sinppets:
 ###### Import Google Drive:
