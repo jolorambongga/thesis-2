@@ -42,6 +42,7 @@
 >> **Additional Note**: you may change the folder names for `train, validate, and test` however, the folders: **"images"** and **"labels"** should remain the same. This is how yolov5 locates your iamges and labels therefore, you **SHOULD NOT** change it!
 >>> **Even More Note**: the `train` folder inside images/labels folder; should contain all the necessary images/labels for detection *(I would recommend about 80% of your total photos gathered --so if you have 1k photos, that would be 800 photos for the train folder)*: more images = more accurate.
 >>> the `validate` folder should contain about `10% of total data`
+***
 #### Code Sinppets and Set-up:
 > I provided the code snippets to help you get set-up.
 ##### Import Google Drive:
@@ -104,3 +105,4 @@ names:
 ```
 !python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5x.pt
 ```
+###### You may change the `batch size` the `epochs` and the `weights` *depending on your available resources.*
