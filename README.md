@@ -28,7 +28,7 @@
 **Import Your Google Drive**
 > Be sure that you are using the same Google Account on the Google Colab notebook and the Google Drive where you have your dataset
 > Be sure to use the yolov5 format for the dataset `(your folder should contain the following folders)`
-``bash
+```bash
 └── images
   ├── train
   ├── validate
@@ -37,7 +37,7 @@
   ├── train
   ├── validate
   ├── test
-``
+```
 > **Note**: you may check the YOLOv5 documentary for training <a href="https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/">here</a>.
 #### Code Sinppets:
 ###### Import Google Drive:
@@ -66,13 +66,13 @@ display = utils.notebook_init()  # checks
 ```
 ###### Create Your Own `customData.yaml` File:
 > Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide`
-``bash
+```bash
 └── content
   └── drive
     └── myDrive
       └── yolov5
         └── data
-``
+```
 train: /content/drive/MyDrive/path/to/dataset/train/images
 val: /content/drive/MyDrive/path/to/dataset/validate/images
 test: /content/drive/MyDrive/path/to/dataset/test/images
