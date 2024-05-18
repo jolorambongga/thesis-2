@@ -51,7 +51,6 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 <a name="checkDir"/>
-
 ##### Check for current Directory:
 > Be sure that your current directory is inside your Google Drive; so that when you git clone the YOLOv5 repository, it will be saved inside your drive.
 ```
