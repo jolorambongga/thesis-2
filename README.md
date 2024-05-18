@@ -42,10 +42,6 @@ drive.mount('/content/drive')
 ```
 %cd /content/drive/MyDrive/path/to/your/desired/folder
 ```
-###### Change the current Directory:
-```
-%cd /content/drive/MyDrive/path/to/your/desired/folder
-```
 ###### GIT Clone the YOLOv5 Repository:
 ```
 !git clone https://github.com/ultralytics/yolov5  # clone
@@ -56,7 +52,18 @@ import torch
 import utils
 display = utils.notebook_init()  # checks
 ```
-###### Change the current Directory:
+###### Create Your Own `Data.yaml` File:
+> Go to -> 
 ```
-%cd /content/drive/MyDrive/path/to/your/desired/folder
+train: /content/drive/MyDrive/DATASET/motor_rider/images/
+val: /content/drive/MyDrive/DATASET/motor_rider/images/validate
+test: /content/drive/MyDrive/DATASET/motor_rider/images/ztest
+
+# Classes
+names:
+  0: rider
+  1: not_rider
+  2: with_helmet
+  3: without_helmet
+  4: plate_num
 ```
