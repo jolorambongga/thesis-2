@@ -40,8 +40,15 @@
 ```
 > **Note**: you may check the YOLOv5 documentary for training <a href="https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/">here</a>.
 >> **Additional Note**: you may change the folder names for `train, validate, and test` however, the folders: **"images"** and **"labels"** should remain the same. This is how yolov5 locates your iamges and labels therefore, you **SHOULD NOT** change it!
->>> **Even More Note**: the `train` folder inside images/labels folder; should contain all the necessary images/labels for detection *(I would recommend about 80% of your total photos gathered --so if you have 1k photos, that would be 800 photos for the train folder)*: more images = more accurate.
->>> the `validate` folder should contain about `10% of total data`
+>>> **Even More Note**: what are `train`, `validate`, and `test` folders used for?
+>>> - Train - used to train the model
+>>> - Validate - used to validate the trained model and to fine-tune it
+>>> - Test - used to test the accuracy of the model
+>>> **What is the best ratio for the images?**: *my prepare ratio for the train, test, and validate ratio is listed below*
+>>>   **Train** - `80% of the total images and labels`
+>>>   **Validate** - `10% of the total images and labels`
+>>>   **Train** - `10% of the total images and labels`
+>>>   Therefore, if you have `1,000 images and labels`; you would have `800 images and labels in train`, `100 images and labels in validate`, and `100 images and labels in test` folder.
 ***
 #### Code Sinppets and Set-up:
 > I provided the code snippets to help you get set-up.
@@ -78,7 +85,7 @@ display = utils.notebook_init()  # checks
 ```
 
 ##### Create your own `customData.yaml` file:
-> Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide
+> Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide`.
 ```
 └── content
   └── drive
@@ -100,12 +107,12 @@ names:
   3: without_helmet
   4: plate_num
 ```
-> `(the classes may vary depending on your dataset; however, this is the format you should follow)`
+>`(the classes may vary depending on your dataset; however, this is the format you should follow).`
 ##### Train the model with your own `customData.yaml`: **before running, make sure that you are inside the yolov5 folder*
-> Use the code snippet to [check for current directory](#checkDir) and the code snippet to [change the directory](#changeDir)
+> Use the code snippet to [check for current directory](#checkDir) and the code snippet to [change the directory](#changeDir).
 ```
 !python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5x.pt
 ```
 ###### You may change the `batch size` the `epochs` and the `weights` *depending on your available resources.*
-###### > There are different yolo weights which would affect accuracy `yolov5s` `yolov5m` `yolov5l` `yolov5x` for `(small, medium, large, extra large)`
-###### After your training is done, you make check your custom weights on `yolov5 > runs > train > exp`; *may vary depending on how many execution you already made [the highest number is the latest run of training (ex. exp3)]*
+> ###### There are different yolo weights which would affect accuracy `yolov5s` `yolov5m` `yolov5l` `yolov5x` for `(small, medium, large, extra large)` respectively.
+###### After your training is done, you make check your custom weights on `yolov5 > runs > train > exp`; *may vary depending on how many execution you already made [the highest number is the latest run of training (ex. exp3)].*
