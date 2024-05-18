@@ -7,6 +7,7 @@
 - [Train Model (For Plate)](#modelPlate)
   - [Link to colab](#trainPlate)
 - [SET-UP](#setup)
+  - [BOFORE SET-UP](#beforeSetup)
   - [Code Snippets and Set-up](#codeSnippets)
   - [Importing Google Drive](#importDrive)
   - [Checking for current directory](#checkDir)
@@ -40,6 +41,8 @@
 
 ***
 ## HOW TO SET-UP:
+<a name="beforeSetup"/>
+
 #### BEFORE SET-UP (PREPARE THE FOLLOWING):
 - [x] Your Custom Dataset in Google Drive `(I recommend having 1k images total, then follow the guide I provided below for organizing your dataset)`
 - [x] Google Colab
