@@ -15,7 +15,8 @@
   - [Cloning YOLOv5 repository](#gitClone)
   - [Creating your custom data.yaml file](#customYaml)
   - [Example of custom data.yaml file](#exampleYaml)
-  - [Training the model](#trainModel)
+  - [Training the model using pre-trained weights](#trainModel)
+  - [Training your custom weights](#trainCustomWeight)
 <a name="modelRider" />
 
 ##### TRAIN THE MODEL FOR RIDER DETECTION
@@ -123,7 +124,7 @@ display = utils.notebook_init()  # checks
 ```
 <a name="exampleYaml" />
 
-###### Example of my own `customData.yaml` file:
+> ###### Example of my own `customData.yaml` file:
 ```
 train: /content/drive/MyDrive/path/to/dataset/train/images
 val: /content/drive/MyDrive/path/to/dataset/validate/images
@@ -142,6 +143,7 @@ names:
 
 ##### Train the model with your own `customData.yaml`: **before running, make sure that you are inside the yolov5 folder*
 > Use the code snippet to [check for current directory](#checkDir) and the code snippet to [change the directory](#changeDir).
+> You may train your model based on `yolov5 weights`, `coco weights`, or other weights available on the internet. *I highly suggest using yolov5's pre-trained weights.*
 ```
 !python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5x.pt
 ```
@@ -149,6 +151,8 @@ names:
 > ###### There are different yolo weights which would affect accuracy `yolov5s` `yolov5m` `yolov5l` `yolov5x` for `(small, medium, large, extra large)` respectively.
 > ###### After your training is done, you make check your custom weights on `yolov5 > runs > train > exp`; you will have two files named `best.pt` and `last.pt`; the **best.pt** is the best model that your model has runned, basically the more 'accurate'; the **last.pt** is the last time your model has been trained.
 > ***location** may vary depending on how many execution you already made [the highest number is the latest run of training (ex. exp3)].*
+> <a name="trainCustomWeight"/>
+> 
 > ###### Then you may further train your custom model weight just by changing the parameters on `training your model` *see example code snippet below.*
 ```
 !python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5/runs/trains/exp/best.pt
