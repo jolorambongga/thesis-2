@@ -53,7 +53,11 @@ import utils
 display = utils.notebook_init()  # checks
 ```
 ###### Create Your Own `customData.yaml` File:
-> Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name)
+> Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide`
+> - drive
+>   - MyDrive
+>     - yolov5
+>       - data
 ```
 train: /content/drive/MyDrive/DATASET/motor_rider/images/
 val: /content/drive/MyDrive/DATASET/motor_rider/images/validate
