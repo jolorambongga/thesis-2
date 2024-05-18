@@ -1,7 +1,7 @@
 # MOTORCYCLE HELMET DETECTION 
 ## Table of Contents:
 - [Train Model (For Rider)](#modelRider)
-- [Train Model (For Helmet](#modelHelmet)
+- [Train Model (For Helmet)](#modelHelmet)
 - [Train Model (For Plate)](#modelPlate)
 - [SET-UP](#setup)
   - [Code Snippets and Set-up](#codeSnippets)
