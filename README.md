@@ -21,5 +21,5 @@
 <a name="" />
 
 ## REQUIREMENTS FOR THIS TO WORK:
-- [ ] Google Colab
-- [ ] Google Drive `(for dataset)`
+- [x] Google Colab
+- [x] Google Drive `(for dataset)`
