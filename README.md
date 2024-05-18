@@ -67,7 +67,10 @@
 >>> - Train - used to train the model
 >>> - Validate - used to validate the trained model and to fine-tune it
 >>> - Test - used to test the accuracy of the model
->>> **What is the best ratio for the images?**: *my prepare ratio for the train, test, and validate ratio is listed below*
+>>>   
+>>> **What is the best ratio for the images?**:
+>>>
+>>> **(my prepared ratio for the train, test, and validate ratio is listed below)*
 >>>   
 >>>   **Train** - `80% of the total images and labels`
 >>>   
