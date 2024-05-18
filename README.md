@@ -86,7 +86,7 @@ display = utils.notebook_init()  # checks
       └── yolov5
         └── data
 ```
-###### Example of my own `customData.yaml` file: `(the classes may vary depending on your dataset; however, this is the format you should follow)`
+###### Example of my own `customData.yaml` file:
 ```
 train: /content/drive/MyDrive/path/to/dataset/train/images
 val: /content/drive/MyDrive/path/to/dataset/validate/images
@@ -100,6 +100,7 @@ names:
   3: without_helmet
   4: plate_num
 ```
+ `(the classes may vary depending on your dataset; however, this is the format you should follow)`
 ##### Train the model with your own `customData.yaml`: **before running, make sure that you are inside the yolov5 folder*
 > Use the code snippet to [check for current directory](#checkDir) and the code snippet to [change the directory](#changeDir)
 ```
