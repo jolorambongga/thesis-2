@@ -59,10 +59,13 @@ drive.mount('/content/drive')
 <a name="changeDir"/>
 
 ##### Change the current Directory:
+
 ```
 %cd /content/drive/MyDrive/path/to/your/desired/folder
 ```
+
 ##### GIT Clone the YOLOv5 Repository:
+
 ```
 !git clone https://github.com/ultralytics/yolov5  # clone
 %cd yolov5
@@ -72,6 +75,7 @@ import torch
 import utils
 display = utils.notebook_init()  # checks
 ```
+
 ##### Create your own `customData.yaml` file:
 > Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide
 ```
