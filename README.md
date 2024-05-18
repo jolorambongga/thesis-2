@@ -11,12 +11,12 @@
 <a name="modelHelmet"/>
 
 ### TRAIN THE MODEL FOR HELMET DETECTION
--The `"train-model-helmet"` is used for training the YOLOv5 model with pre-trained weights using a custom dataset from roboflow uploaded on google-drive.
+- The `"train-model-helmet"` is used for training the YOLOv5 model with pre-trained weights using a custom dataset from roboflow uploaded on google-drive.
 <a href="#" targe="_blank">Link for the training model using Google Colab</a>
 <a name="modelPlate"/>
 
 ### TRAIN THE MODEL FOR PLATE DETECTION
-The `"train-model-plate"` is used for training the YOLOv5 model using custom dataset from roboflow uploaded on google-drive.
+- The `"train-model-plate"` is used for training the YOLOv5 model using custom dataset from roboflow uploaded on google-drive.
 <a href="#" targe="_blank">Link for the training model using Google Colab</a>
 <a name=""/>
 
