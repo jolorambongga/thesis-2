@@ -20,4 +20,6 @@
 <a href="#" targe="_blank">Link for the training model using Google Colab</a>
 <a name="" />
 
-## STEPS TO FOLLOW WHEN TRAINING CUSTOM DATA SET:
+## REQUIREMENTS FOR THIS TO WORK:
+- [ ]Google Colab
+- [ ]Google Drive `(for dataset)`
