@@ -44,8 +44,8 @@
 <a name="beforeSetup"/>
 
 #### BEFORE SET-UP (PREPARE THE FOLLOWING):
-- [x] Your Custom Dataset in Google Drive `(I recommend having 1k images total, then follow the guide I provided below for organizing your dataset)`
-- [x] Google Colab
+>- [x] Your Custom Dataset in Google Drive `(I recommend having 1k images total, then follow the guide I provided below for organizing your dataset)`
+>- [x] Google Colab
 
 **Import Your Google Drive**
 > Be sure that you are using the same Google Account on the Google Colab notebook and the Google Drive where you have your dataset
