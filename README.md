@@ -100,7 +100,7 @@ names:
   3: without_helmet
   4: plate_num
 ```
- `(the classes may vary depending on your dataset; however, this is the format you should follow)`
+> `(the classes may vary depending on your dataset; however, this is the format you should follow)`
 ##### Train the model with your own `customData.yaml`: **before running, make sure that you are inside the yolov5 folder*
 > Use the code snippet to [check for current directory](#checkDir) and the code snippet to [change the directory](#changeDir)
 ```
