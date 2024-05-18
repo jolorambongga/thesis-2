@@ -42,22 +42,26 @@
 >> **Additional Note**: you may change the folder names for `train, validate, and test` however, the folders: **"images"** and **"labels"** should remain the same. This is how yolov5 locates your iamges and labels therefore, you **SHOULD NOT** change it!
 >>> **Even More Note**: the `train` folder inside images/labels folder; should contain all the necessary images/labels for detection *(I would recommend about 80% of your total photos gathered --so if you have 1k photos, that would be 800 photos for the train folder)*: more images = more accurate.
 >>> the `validate` folder should contain about `10% of total data`
-#### Code Sinppets:
-###### Import Google Drive:
+#### Code Sinppets and Set-up:
+##### Import Google Drive:
 ```
 from google.colab import drive
 drive.mount('/content/drive')
 ```
-###### Check for current Directory:
+<a name="checkDir"/>
+
+##### Check for current Directory:
 > Be sure that your current directory is inside your Google Drive; so that when you git clone the YOLOv5 repository, it will be saved inside your drive.
 ```
 !pwd
 ```
-###### Change the current Directory:
+<a name="changeDir"/>
+
+##### Change the current Directory:
 ```
 %cd /content/drive/MyDrive/path/to/your/desired/folder
 ```
-###### GIT Clone the YOLOv5 Repository:
+##### GIT Clone the YOLOv5 Repository:
 ```
 !git clone https://github.com/ultralytics/yolov5  # clone
 %cd yolov5
@@ -67,7 +71,7 @@ import torch
 import utils
 display = utils.notebook_init()  # checks
 ```
-###### Create Your Own `customData.yaml` File:
+##### Create your own `customData.yaml` file:
 > Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide
 ```
 └── content
@@ -76,6 +80,7 @@ display = utils.notebook_init()  # checks
       └── yolov5
         └── data
 ```
+###### Example of my own `customData.yaml` file: `(the classes may vary depending on your dataset; however, this is the format you should follow)`
 ```
 train: /content/drive/MyDrive/path/to/dataset/train/images
 val: /content/drive/MyDrive/path/to/dataset/validate/images
@@ -88,4 +93,9 @@ names:
   2: with_helmet
   3: without_helmet
   4: plate_num
+```
+##### Train the model with your own `customData.yaml`: **before running, make sure that you are inside the yolov5 folder*
+> Use the code snippet to [check for current directory](#checkDir) and the code snippet to [change the directory](#changeDir)
+```
+!python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5x.pt
 ```
