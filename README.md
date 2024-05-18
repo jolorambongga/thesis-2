@@ -21,7 +21,9 @@
 <a name="" />
 
 ## HOW TO SET-UP:
-### MUST HAVE THE FOLLOWING:
+#### PREPARE HAVE THE FOLLOWING:
+- [x] Your Custom Dataset `(Google Drive)`
 - [x] Google Colab
-- [x] Google Drive `(for dataset)`
-### Code Sinppets:
+#### Code Sinppets:
+**Import Your Google Drive**
+> Be sure that you are using the same Google Account on the Google Colab notebook and the Google Drive where you have your dataset
