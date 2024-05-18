@@ -4,6 +4,14 @@
 - [Train Model (For Helmet](#modelHelmet)
 - [Train Model (For Plate)](#modelPlate)
 - [SET-UP](#setup)
+  - [Code Snippets and Set-up](#codeSnippets)
+  - [Importing Google Drive](#importDrive)
+  - [Checking for current directory](#checkDir)
+  - [Changing the directory](#changeDir)
+  - [Cloning YOLOv5 repository](#gitClone)
+  - [Creating your custom data.yaml file](#customYaml)
+  - [Example of custom data.yaml file](#exampleYaml)
+  - [Training the model](#trainModel)
 <a name="modelRider" />
 
 ##### TRAIN THE MODEL FOR RIDER DETECTION
@@ -51,8 +59,12 @@
 >>>   **Train** - `10% of the total images and labels`
 >>>   Therefore, if you have `1,000 images and labels`; you would have `800 images and labels in train`, `100 images and labels in validate`, and `100 images and labels in test` folder.
 ***
+<a name="codeSnippets" />
+
 #### Code Sinppets and Set-up:
 > I provided the code snippets to help you get set-up.
+<a name="importDrive" />
+
 ##### Import Google Drive:
 ```
 from google.colab import drive
@@ -72,6 +84,7 @@ drive.mount('/content/drive')
 ```
 %cd /content/drive/MyDrive/path/to/your/desired/folder
 ```
+<a name="gitClone" />
 
 ##### GIT Clone the YOLOv5 Repository:
 
@@ -84,6 +97,7 @@ import torch
 import utils
 display = utils.notebook_init()  # checks
 ```
+<a name="customYaml" />
 
 ##### Create your own `customData.yaml` file:
 > Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide`.
@@ -94,6 +108,8 @@ display = utils.notebook_init()  # checks
       └── yolov5
         └── data
 ```
+<a name="exampleYaml" />
+
 ###### Example of my own `customData.yaml` file:
 ```
 train: /content/drive/MyDrive/path/to/dataset/train/images
@@ -109,6 +125,8 @@ names:
   4: plate_num
 ```
 >`(the classes may vary depending on your dataset; however, this is the format you should follow).`
+<a name="trainModel" />
+
 ##### Train the model with your own `customData.yaml`: **before running, make sure that you are inside the yolov5 folder*
 > Use the code snippet to [check for current directory](#checkDir) and the code snippet to [change the directory](#changeDir).
 ```
