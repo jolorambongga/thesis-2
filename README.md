@@ -43,6 +43,7 @@
 >>> **Even More Note**: the `train` folder inside images/labels folder; should contain all the necessary images/labels for detection *(I would recommend about 80% of your total photos gathered --so if you have 1k photos, that would be 800 photos for the train folder)*: more images = more accurate.
 >>> the `validate` folder should contain about `10% of total data`
 #### Code Sinppets and Set-up:
+
 ##### Import Google Drive:
 ```
 from google.colab import drive
