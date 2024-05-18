@@ -40,8 +40,8 @@
 ```
 > **Note**: you may check the YOLOv5 documentary for training <a href="https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/">here</a>.
 >> **Additional Note**: you may change the folder names for `train, validate, and test` however, the folders: **"images"** and **"labels"** should remain the same. This is how yolov5 locates your iamges and labels therefore, you **SHOULD NOT** change it!
->>> **Even More Note**: the `train` folder inside images/labels folder; should contain all the necessary images/labels for detection: more images = more accurate.
->>> the `validate` folder should contain at least  
+>>> **Even More Note**: the `train` folder inside images/labels folder; should contain all the necessary images/labels for detection *(I would recommend about 80% of your total photos gathered --so if you have 1k photos, that would be 800 photos for the train folder)*: more images = more accurate.
+>>> the `validate` folder should contain about `10% of total data`
 #### Code Sinppets:
 ###### Import Google Drive:
 ```
@@ -68,13 +68,14 @@ import utils
 display = utils.notebook_init()  # checks
 ```
 ###### Create Your Own `customData.yaml` File:
-> Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide`
+> Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide
 ```
 └── content
   └── drive
     └── myDrive
       └── yolov5
         └── data
+```
 ```
 train: /content/drive/MyDrive/path/to/dataset/train/images
 val: /content/drive/MyDrive/path/to/dataset/validate/images
