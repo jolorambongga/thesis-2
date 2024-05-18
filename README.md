@@ -74,7 +74,7 @@ names:
 $ ./tree-md .
 # Project tree
 
-.
+```bash
  * [tree-md](./tree-md)
  * [dir2](./dir2)
    * [file21.ext](./dir2/file21.ext)
@@ -86,3 +86,4 @@ $ ./tree-md .
  * [file_in_root.ext](./file_in_root.ext)
  * [README.md](./README.md)
  * [dir3](./dir3)
+```
