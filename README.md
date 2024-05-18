@@ -150,4 +150,6 @@ names:
 > ###### After your training is done, you make check your custom weights on `yolov5 > runs > train > exp`; you will have two files named `best.pt` and `last.pt`; the **best.pt** is the best model that your model has runned, basically the more 'accurate'; the **last.pt** is the last time your model has been trained.
 > ***location** may vary depending on how many execution you already made [the highest number is the latest run of training (ex. exp3)].*
 > ###### Then you may further train your custom model weight just by changing the parameters on `training your model` *see example code snippet below.*
--   !python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5/runs/trains/exp/best.pt
+```
+!python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5/runs/trains/exp/best.pt
+```
