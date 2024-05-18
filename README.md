@@ -5,8 +5,6 @@
 - [Train Model (For Plate)](#modelPlate)
 <a name="modelRider" />
 
-test [^Link]
-[^Link]: https://colab.research.google.com/drive/1O6OGddenAvl-OzJ7Q9wkIfNKcrZYHdHr#scrollTo=ezm9utIa5Sof
 ##### TRAIN THE MODEL FOR RIDER DETECTION
 - The ``"train-model-rider"`` is used for training the YOLOv5 model with pre-trained weights using a custom dataset uploaded on google-drive.
 <a href="https://colab.research.google.com/drive/1O6OGddenAvl-OzJ7Q9wkIfNKcrZYHdHr#scrollTo=ezm9utIa5Sof" target="_blank">Link forthe training model using Google Colab</a>
