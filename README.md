@@ -55,13 +55,11 @@ display = utils.notebook_init()  # checks
 ###### Create Your Own `customData.yaml` File:
 > Go to the YOLOv5 folder path in your google drive, right click the data folder inside yolov5 folder and click "create new file" and name it "customData.yaml" (or any desired file name) `see the folder branch below for guide`
 ```bash
-|-----content
-|------drive
-|-------myDrive
-|--------yolov5
-|---------data
-├── dir1 │ ├── file11.ext │ └── file12.ext ├── dir2 │ ├── file21.ext │ ├── file22.ext │ └── file23.ext ├── dir3 ├── file_in_root.ext └── README.md
-
+└── content
+  └── drive
+    └── myDrive
+      └── yolov5
+        └── data
 ```
 train: /content/drive/MyDrive/path/to/dataset/train/images
 val: /content/drive/MyDrive/path/to/dataset/validate/images
