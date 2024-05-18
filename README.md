@@ -38,3 +38,25 @@ drive.mount('/content/drive')
 ```
 !pwd
 ```
+###### Change the current Directory:
+```
+%cd /content/drive/MyDrive/path/to/your/desired/folder
+```
+###### Change the current Directory:
+```
+%cd /content/drive/MyDrive/path/to/your/desired/folder
+```
+###### GIT Clone the YOLOv5 Repository:
+```
+!git clone https://github.com/ultralytics/yolov5  # clone
+%cd yolov5
+%pip install -qr requirements.txt comet_ml  # install
+
+import torch
+import utils
+display = utils.notebook_init()  # checks
+```
+###### Change the current Directory:
+```
+%cd /content/drive/MyDrive/path/to/your/desired/folder
+```
