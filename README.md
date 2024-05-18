@@ -51,6 +51,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 <a name="checkDir"/>
+
 ##### Check for current Directory:
 > Be sure that your current directory is inside your Google Drive; so that when you git clone the YOLOv5 repository, it will be saved inside your drive.
 ```
@@ -105,3 +106,5 @@ names:
 !python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5x.pt
 ```
 ###### You may change the `batch size` the `epochs` and the `weights` *depending on your available resources.*
+###### > There are different yolo weights which would affect accuracy `yolov5s` `yolov5m` `yolov5l` `yolov5x` for `(small, medium, large, extra large)`
+###### After your training is done, you make check your custom weights on `yolov5 > runs > train > exp`; *may vary depending on how many execution you already made [the highest number is the latest run of training (ex. exp3)]*
