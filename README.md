@@ -21,7 +21,7 @@
 <a name="" />
 
 #### BEFORE SET-UP (PREPARE THE FOLLOWING):
-- [x] Your Custom Dataset `(Google Drive)`
+- [x] Your Custom Dataset in Google Drive `(I recommend having 1k images total, then follow the guide I provided below for organizing your dataset)`
 - [x] Google Colab
 ***
 ## HOW TO SET-UP:
@@ -40,6 +40,8 @@
 ```
 > **Note**: you may check the YOLOv5 documentary for training <a href="https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/">here</a>.
 >> **Additional Note**: you may change the folder names for `train, validate, and test` however, the folders: **"images"** and **"labels"** should remain the same. This is how yolov5 locates your iamges and labels therefore, you **SHOULD NOT** change it!
+>>> **Even More Note**: the `train` folder inside images/labels folder; should contain all the necessary images/labels for detection: more images = more accurate.
+>>> the `validate` folder should contain at least  
 #### Code Sinppets:
 ###### Import Google Drive:
 ```
