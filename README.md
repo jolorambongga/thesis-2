@@ -164,3 +164,19 @@ names:
 ```
 !python train.py --img 640 --batch 16 --epochs 100 --data myData.yaml --weights yolov5/runs/trains/exp/best.pt
 ```
+> ###### If you ever get disconnected from runtime; you may resume training from the `last.pt` weights by either of the following code snippets:
+```
+!python train.py --resume
+```
+> ###### or by;
+```
+!python train.py --resume /content/drive/myDrive/yolov5/runs/train/exp/last.pt
+```
+> ###### or by;
+```
+!python train.py /content/drive/myDrive/yolov5/runs/train/exp/last.pt --resume
+```
+> ###### or by;
+```
+!python train.py --weights /content/drive/myDrive/yolov5/runs/train/exp/last.pt --resume
+```
