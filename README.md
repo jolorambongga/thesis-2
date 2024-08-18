@@ -145,6 +145,19 @@ names:
   3: without_helmet
   4: plate_num
 ```
+```
+train: /content/drive/MyDrive/path/to/dataset/images/train
+val: /content/drive/MyDrive/path/to/dataset/images/validate
+test: /content/drive/MyDrive/path/to/dataset/images/test
+
+# Classes
+names:
+  0: rider
+  1: not_rider
+  2: with_helmet
+  3: without_helmet
+  4: plate_num
+```
 >`(the classes may vary depending on your dataset; however, this is the format you should follow).`
 <a name="trainModel" />
 
